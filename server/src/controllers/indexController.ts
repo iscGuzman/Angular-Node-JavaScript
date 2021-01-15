@@ -1,0 +1,16 @@
+import {Request, Response} from 'express';
+
+class IndexController {
+
+    public index (req: Request ,res: Response){
+        res.json({
+            text: 'API is api/games'
+        });
+    }
+
+}
+
+//Exportamos toda la clase
+export const indexController = new IndexController();
+
+
